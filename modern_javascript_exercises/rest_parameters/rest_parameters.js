@@ -1,9 +1,5 @@
-// Instructions can be found in rest_parameters.md
-
-// Add rest parameters here!
-export function add(a, b) {
-  // Add a loop here
-  return a + b;
+export function add(...args) {
+  let sum = 0;
+  for (const arg of args) sum += arg;
+  return sum;
 }
-
-add(1, 2, 3, 4, 5);
